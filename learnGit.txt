@@ -1,0 +1,32 @@
+git clone https://github.com/rajibcyrusmh/spark.git
+cd spark
+ls
+
+--create a file named test.txt
+git add test.txt
+git commit -m "added test.txt"
+
+-- push it to master
+git push
+
+
+--create a branch
+git branch devOps
+git checkout devOps
+
+--create a new file named learnGit.txt
+git add learnGit.txt
+git commit -m "added learnGit.txt to newly created branch named devOps"
+
+--push it to master
+git push origin devOps
+
+
+==MERGE==
+
+git checkout master 
+
+git merge devOps  //master merged with devOps
+
+git push
+
